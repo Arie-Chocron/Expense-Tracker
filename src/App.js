@@ -1,4 +1,4 @@
-import ExpenseRender from "./component/ExpenseRender";
+import ExpenseRender from "./component/Expenses/ExpenseRender";
 
 function App() {
   const expenses = [
