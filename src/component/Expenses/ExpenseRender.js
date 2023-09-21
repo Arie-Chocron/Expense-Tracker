@@ -1,8 +1,11 @@
 import ExpenseItem from "./ExpenseItem";
+import "./ExpenseRender.css";
+import Card from "../UI/Card";
+
 function ExpenseRender(props) {
   const expenses = props.expenses;
   return (
-    <div>
+    <Card className="expenses">
       <h2>Let's get started!</h2>
       <div>
         <ExpenseItem
@@ -28,7 +31,7 @@ function ExpenseRender(props) {
         amount={expenses[3].amount}
         date={expenses[3].date}
       ></ExpenseItem>
-    </div>
+    </Card>
   );
 }
 
