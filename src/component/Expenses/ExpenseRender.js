@@ -6,7 +6,6 @@ function ExpenseRender(props) {
   const expenses = props.expenses;
   return (
     <Card className="expenses">
-      <h2>Let's get started!</h2>
       <div>
         <ExpenseItem
           title={expenses[0].title}
