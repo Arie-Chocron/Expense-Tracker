@@ -1,4 +1,5 @@
 import ExpenseRender from "./component/Expenses/ExpenseRender";
+import NewExpense from "./component/NewExpense/NewExpense";
 
 function App() {
   const expenses = [
@@ -22,7 +23,12 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-  return <ExpenseRender expenses={expenses}></ExpenseRender>;
+  return (
+    <div className="new-expense">
+      <NewExpense />
+      <ExpenseRender expenses={expenses}></ExpenseRender>
+    </div>
+  );
 }
 
 export default App;
